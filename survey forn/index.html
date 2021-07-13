@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.header {
+  padding:0 30%;
+  margin-bottom: 5px;
+}
+h1{
+  font-size: 90px;
+  font-weight: 500;
+  line-height:1;
+}
+body{ 
+  height: 1800px;
+  background-image:  url(https://media.newyorker.com/photos/59ee325f1685003c9c28c4ad/master/w_2560%2Cc_limit/Heller-Kirkus-Reviews.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #cccccc; 
+}
+
+#survey-form{
+  padding:0 30%;
+  margin-bottom: 10px; 
+  font-size: 50px;
+}
+input,
+button,select,
+textarea {
+  margin: 0;
+  font-size: inherit;
+  width: 100%;
+}
+
+button{
+  border: none;
+}
+label{
+  color: red;
+  font-size: 30px;
+}
+p{
+  color: red;
+  font-size: 30px;
+}
+description{
+  font-size: 10px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-clip: padding-box;
+}
+.submit-button{
+  display: block;
+  width: 100%;
+  background: red;
+}
+
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+input {
+  width: 14px;
+  height: 30px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+<div class = "container">
+<script>
+const projectName = 'survery_form';
+</script>
+  <header class = "header">
+    <h1 id ="title">Reading Survey</h1>
+    <p id="description"><b>Thank you for taking the time to complete this survey!</b></p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label">Name</label>
+      <input
+             class="form-control"
+             type="text"
+             name="name"
+             id="name"
+             placeholder="Enter your name"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <label id="email-label">Email</label>
+      <input
+             class="form-control"
+             type="email"
+             name="email"
+             id="email"
+             placeholder="Enter your email"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for "number"><span class="clue">Age</span></label>
+      <input
+             class="form-control"
+             type="number"
+             name="number"
+             id="number"
+             placeholder="Age"
+             min="0"
+             max="110"
+             />
+    </div>
+<div class="form-group">
+  <p>How many books do you read in a year?</p>
+  <select id="dropdown" name="counter" class="form-control" required>
+    <option value="Less than 5">Less than 5 </option>
+    <option value="Between 5 and 15">Between 5 and 15</option>
+    <option value="Between 15 and 30">Between 15 and 30</option>
+    <option value="More than 30">More than 30</option>
+   
+  </select> </div>
+    <div class="form-group">
+      <p>Do you think children should read more?</p>
+      <label class="user-opinion">
+        <input
+            name="user-opinion"   
+            value="definetly"
+            type="radio"
+            class="input-radio"
+            checked
+             
+               />Definetly</label>
+        <label class="user-opinion">
+        <input
+            name="user-opinion"   
+            value="no"
+            type="radio"
+            class="input-radio"
+            checked
+               />No</label>
+        <label class="user-opinion">
+          <input
+                 name="user-opinion"
+                 type="radio"
+                 value="I don't know"
+                 class="input-radio"
+                 checked
+                 />I don't know</label>
+      
+    </div>
+    <div class="form-group">
+      <p>What type of books do you usually read?</p>
+      <label>
+        <input
+               name="genre"
+               value="science fiction/fantasy"
+               type="checkbox"
+               class="input-checkbox"
+               />Science Fiction/Fantasy
+      </label>
+      <label>
+        <input
+               name="genre"
+               value="non-fiction"
+               type="checkbox"
+               class="input-checkbox"
+               />Non-fiction
+      </label>
+      <label>
+        <input
+               name="genre"
+               value="non-fiction"
+               type="checkbox"
+               class="input-checkbox"
+               />Romance
+      </label>
+      
+      <label>
+        <input
+               name="genre"
+               value="non-fiction"
+               type="checkbox"
+               class="input-checkbox"
+               />Adventure
+      </label>
+    </div>
+    <div class="form-group">
+      <p>Any other book type you enjoy?</p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Place your answer here..."
+                ></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+  
+</div>
+</body>
+</html>
