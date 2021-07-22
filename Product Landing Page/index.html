@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+}
+.btn{
+  background-color: pink;
+}
+nav{
+  padding-left: 800px;
+}
+li{
+  padding-right: 50px;
+  display: inline-block;
+  padding-top: 50px;
+}
+img{
+  height:150px;
+  width: 300px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+nav,img{
+  background-color: white;
+}
+#sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#email{
+  margin-top: 20px;
+  width: 300px;
+  height: 30px;
+}
+#submit{
+  margin-top: 10px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-right:40px;
+  margin-left:400px;
+  color: pink;
+}
+.grid {
+    display: flex;
+}
+h2{
+  font-size: 21px;
+}
+p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#how-it-works{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+#pricing {
+    margin-top: 50px;
+    flex-direction: column;
+ }
+.product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+.product>ol>li{
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 800px){
+#pricing{
+  margin-left: 300px;
+}
+.product{
+  display: inline-block;
+}
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<script src="https://kit.fontawesome.com/c6210f72e0.js" crossorigin="anonymous"></script>
+
+<script>const projectName = 'product-landing-page';</script>
+<div id="logos">
+  <header id="header">
+    <div class="logo">
+    <img
+         id="header-img"         src="https://img.freepik.com/free-vector/lotus-flower-logo-icon-linear-style_126523-708.jpg?size=626&ext=jpg"
+         alt="website planet logo" 
+         />
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#features">Features</a></li>
+          <li>
+            <a class="nav-link" href="#how-it-works">How it works</a></li>
+          <li>
+            <a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+        
+      </nav>
+      </div>
+  </header>
+  <section id="sec">
+    <h2>Homemade skincare products, for all skin types</h2>
+    
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+            name="email" 
+            id="email"
+            type="email"
+            placeholder="Enter your email here"
+            required
+             /><br>
+      <input
+             id="submit"
+             type="submit"
+             value="Submit"
+             class="btn"
+             />
+    </form>
+     </section>
+  
+  
+    <div class="container">
+    <section id="features">
+    <div class="grid" style="font-size: 0.5rem;">
+      <div class="icon"><i class="fas fa-arrow-alt-circle-right fa-5x"></i></div>
+      <div class="desc">
+        <h2>Natural ingredients</h2>
+        <p>Our products have natural ingredients, that delay the aging process and repair damaged skin.</p>
+      </div>
+      </div>
+      
+      
+      <div class="grid" style="font-size: 0.5rem;">
+      <div class="icon"><i class="fa fa-4x fa-truck"></i></div>
+      <div class="desc">
+        <h2>Fast shipping</h2>
+        <p>We are making sure you receive your products as soon as we finish them.</p>
+      </div>
+      </div>
+      
+      <div class="grid" style="font-size: 0.5rem;">
+      <div class="icon"><i class="fa fa-4x fa-battery-full"></i>
+</div>
+      <div class="desc">
+        <h2>Quality Assurance</h2>
+        <p>We are carefully creating the best product, based on your skin type.</p>
+      </div>
+      </div>
+      
+      
+      
+      
+    </section>
+    <section id="how-it-works">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/faZxmcCoQvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+     </section>
+      
+      <section id="pricing">
+      <div class="product" id="face-masks">
+        <div class="level">Basic Kit</div>
+        <h2>$200</h2>
+        <ol>
+          <li>Anti-Acne kit.</li>
+          <li>Charcoal Face Mask.</li>
+          <li>Micellar Water.</li>
+          <li>Hand Lotion.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+        
+        
+        <div class="product" id="anti-aging">
+        <div class="level">Anti Aging Kit</div>
+        <h2>$400</h2>
+        <ol>
+          <li>Vitamin A serum.</li>
+          <li>Ginseng Daily Cream.</li>
+          <li>Hyaluronic Acid Serum.</li>
+          <li>Vitamin C Gel.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+        
+        <div class="product" id="face-masks">
+        <div class="level">Daily Routine</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Morning Kit.</li>
+          <li>Evening Kit.</li>
+          <li>Micellar Water.</li>
+          <li>Sun Protection Cream.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+        
+     </section>
+  </div>
+  
+</div>
+</body>
+</html>
